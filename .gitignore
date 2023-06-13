@@ -1,1 +1,4 @@
-*.gpx
+*
+!.gitignore
+!script.sh
+!README.md

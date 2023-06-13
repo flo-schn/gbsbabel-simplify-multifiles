@@ -7,9 +7,11 @@ then run
 bash script.sh
 ```
 
-currently set to simplify track to a 10th of previous size. ajust according in `script.sh` to what is needed.
+uses gpsbabel to [simplify](https://www.gpsbabel.org/htmldoc-1.8.0/filter_simplify.html) and thus reduce the number of trackpoints of a track in gpx files.
 
 ## to-dos:
-- request the user in termnial to approve [Y/n] after sizes of gpx files is shown and before simplification is done
 - include a security hook for very small files.
-- ask user to put fraction in instead of hardcoded in script
+- add more gpsbabel manipulations: eg remove duplicates, merge segements, 
+- allow enter key for confirmation
+- make sure that fraction userinput is an integer
+- allow for spaces in filenames
